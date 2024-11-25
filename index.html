@@ -4,45 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Automated File Sorter File Explorer Project</title>
-    <style>
+<style>
+        /* General Styling */
         body {
-            background-color: #f4f1ea;
-            color: #3e4e50;
-            font-family: Arial, sans-serif;
+            background-color: #e0d7c4;
+            color: #4f4b3e;
+            font-family: "Times New Roman", Times, serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column; 
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
         }
+
         h1 {
-            color: #2c5f2d;
-            font-size: 2em;
+            color: #3e2a47; 
+            font-size: 2.5em;
+            margin-top: 50px;
         }
-        p {
-            color: #3e4e50;
+
+        h2 {
+            color: #4f4b3e;
+            font-size: 1.5em;
         }
+
         a {
-            color: #3d5a80;
+            color: #6b4f3d;
             text-decoration: none;
-            border-bottom: 1px solid #3d5a80;
+            border-bottom: 1px solid #6b4f3d;
             transition: color 0.3s ease, border-bottom-color 0.3s ease;
         }
+
         a:hover {
-            color: #2c5f2d;
-            border-bottom-color: #2c5f2d;
+            color: #3e2a47;
+            border-bottom-color: #3e2a47;
         }
+
+        /* Buttons Styling */
+        .top-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 20px 0; 
+        }
+
+        .top-buttons .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #8e7a59; 
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+        }
+
+        .top-buttons .button:hover {
+            background-color: #6b5d42;
+            transform: scale(1.05);
+        }
+
+        /* File List Styling */
         .file-list {
-            background-color: #e6ebe0;
+            background-color: #f7e6d5; 
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
             max-width: 600px;
             margin: 20px auto;
         }
+
+        /* Project Steps Section Styling */
+        .project-steps {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f5f1e3;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%; 
+            max-width: 1000px;
+        }
+
+        .project-steps h2 {
+            text-align: center;
+            color: #3e2a47;
+            margin-bottom: 20px;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        .step h3 {
+            color: #4f4b3e;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #4f4b3e;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .step img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+        }
+
+        /* Project Logo Styling */
+        .project-logo {
+            display: block;
+            margin: 20px auto;
+            max-width: 150px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
     </style>
-</head>
 <body>
     <h1>Welcome to the Python Automated File Sorter File Explorer Project!</h1>
-    <p>This project includes a Python script to automatically organize files into folders based on their type. Below you can find the Jupyter notebook and Github Repository associated with this project. My GitHub page for all of my projects is: <a href="https://github.com/nhuxhuynh" target="_blank">https://github.com/nhuxhuynh</a></p>
+    <img src="imagep/py1.png" alt="mySQL Project" class="project-logo">
+    <img src="imagep/py2.png" alt="mySQL Project" class="project-logo">
+    <p>This project includes a Python script to automatically organize files into folders based on their type. Below you can find the Jupyter notebook and Github Repository for the full Python Script associated with this project. My GitHub page for all of my projects is: <a href="https://github.com/nhuxhuynh" target="_blank">https://github.com/nhuxhuynh</a></p>
+
+    <div class="top-buttons">
+        <a href="https://nhuxhuynh.github.io/nhuxhuynh-portfolio/" class="button">Go back to Portfolio</a>
+        <a href="https://nhuxhuynh.github.io/MySQL-EDA-Project/" class="button" target="_blank">Go to Layoffs EDA Project</a>
+    </div>
+    
     <h2>View and Download Files:</h2>
     <div class="file-list">
         <ul>
@@ -50,5 +153,55 @@
             <li><a href="https://github.com/nhuxhuynh/Python-Automated-File-Sorter-Project/blob/main/PythonAutomatedFileSorterProject.ipynb" target="_blank" download="PythonAutomatedFileSorterProject.ipynb">View Code on Github</a></li>
         </ul>
     </div>
+
+    <!-- Project Steps Section -->
+<div class="project-steps">
+    <h2>Python Automatic File Sorter File Explorer Project Steps</h2>
+
+    <!-- Step 1 -->
+    <div class="step">
+        <h3>Using Jupyter Notebook: Import and Path on the Computer</h3>
+        <p>
+            In this project, I developed a Python Automatic File Sorter File Explorer script on Jupyter Notebook. My goal was to enhance productivity by sorting and organizing files into it specific subfolders based on it's file type (images, text, and csv) in the specific path. The `os` module navigates and receive the file information and `shutil` moves files to their corresponding folder. The `path` is use to adapt to different directories and indicates what file path we're working on.
+        </p>
+        <img src="imagep/py3.png" alt="import and path" class="step-image">
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step">
+        <h3>Reading Files in the Directory</h3>
+        <p>
+            The file_name = os.listdir(path) retrieve all files inside of the directory that is specified by path from the python script above. These files that are later going to be sorted into subfolders.
+        </p>
+        <img src="imagep/py7.png" alt="File name os.lisdtfir(path)" class="step-image">
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step">
+        <h3>Creating the Folders for Each File Type</h3>
+        <p>
+            The folder_names (Folder names for each file type) are created and define as `csv files`, `image files`, and `text files'. Then the python script for `for loop` is used to check if each (sub) folder already exists in that specified path and if it doesn't exist ('if not') then we can create the folder names using the os.makedirs() function.
+        </p>
+        <img src="imagep/py8.png" alt="Step 2" class="step-image">
+        <p>
+            Below is the result and the (sub) folders are now created in the path (inside of the Python Project Folder). There's 3 subfolders of the Python Project Folder created: csv files, images files, text files, and the files next to the subfolders are going to be use to test if the script works in the upcoming steps.
+        </p>
+        <img src="imagep/py4.png" alt="Step 2" class="step-image">
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step">
+        <h3>Sorting Files into its Coordinated Folders</h3>
+        <p>
+            The script below iterates through each file in the directory and determines the type of file that it is. If the file is not in it's target/coordinated folder, then shutil.move() will move the file to it's coordinated folder based of the file type inside of that directory path.
+        </p>
+        <img src="imagep/py9.png" alt="Step 3" class="step-image">
+        <p>
+            Below you can see that the files successfully gets sorted into its respective folder based on its file type! This python script demonstrates that this can be used for real-world tasks like automation and data management, which is super helpful to efficiently organized large numbers of files within seconds to reduce manual effort and increase file accessibility. Thank you for viewing my Python Automation File Project! :) (The FULL Python Script is in my Github or Click on the Link in "View Files:" section above)
+        </p>
+        <img src="imagep/py6.png" alt="Step 3" class="step-image">
+    </div>
+
+
 </body>
 </html>
